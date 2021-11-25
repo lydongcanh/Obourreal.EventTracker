@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace API.Infrastructure.Requests
+namespace Obourreal.EventTracker.API.Infrastructure.Requests
 {
-    public class SegmentTrackRequest
+    public class SegmentPageRequest
     {
         /// <summary>
         /// The ID for this user.
@@ -12,11 +12,18 @@ namespace API.Infrastructure.Requests
         public string UserId { get; set; }
         
         /// <summary>
-        /// The name of the event you’re tracking.
+        /// The webpage name you’re tracking.
         /// Human-readable names like Song Played or Status Updated is recommended.
         /// </summary>
         [Required]
-        public string Event { get; set; }
+        public string Name { get; set; }
+        
+        /// <summary>
+        /// The webpage category.
+        /// If you’re making a news app, the category could be Sports.
+        /// </summary>
+        [Required]
+        public string Category { get; set; }
         
         /// <summary>
         /// A dictionary of properties for the event.

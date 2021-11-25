@@ -4,7 +4,7 @@ using System.Reflection;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace API.Infrastructure.ServiceConfiguration
+namespace Obourreal.EventTracker.API.Infrastructure.ServiceConfiguration
 {
     public static class SwaggerConfiguration
     {

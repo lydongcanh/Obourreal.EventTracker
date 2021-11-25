@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API", "API\API.csproj", "{92AF9395-F6FB-4476-AD83-F2BA894FCC23}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Obourreal.EventTracker.API", "Obourreal.EventTracker.API\Obourreal.EventTracker.API.csproj", "{92AF9395-F6FB-4476-AD83-F2BA894FCC23}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

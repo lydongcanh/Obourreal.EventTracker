@@ -1,8 +1,8 @@
-using API.Infrastructure.Requests;
 using Microsoft.AspNetCore.Mvc;
+using Obourreal.EventTracker.API.Infrastructure.Requests;
 using Segment;
 
-namespace API.Controllers
+namespace Obourreal.EventTracker.API.Controllers
 {
     [ApiController]
     [Route("[controller]")]

@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace API.Infrastructure.Requests
+namespace Obourreal.EventTracker.API.Infrastructure.Requests
 {
     public class SegmentAliasRequest
     {

@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using API.Infrastructure.ServiceConfiguration;
+using Obourreal.EventTracker.API.Infrastructure.ServiceConfiguration;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -13,7 +13,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Segment;
 
-namespace API
+namespace Obourreal.EventTracker.API
 {
     public class Startup
     {

@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace API.Infrastructure.Requests
+namespace Obourreal.EventTracker.API.Infrastructure.Requests
 {
-    public class SegmentGroupRequest
+    public class SegmentIdentifyRequest
     {
         /// <summary>
         /// The ID for this user.
@@ -12,13 +12,7 @@ namespace API.Infrastructure.Requests
         public string UserId { get; set; }
 
         /// <summary>
-        /// The ID for this group.
-        /// </summary>
-        [Required]
-        public string GroupId { get; set; }
-        
-        /// <summary>
-        /// A dictionary of traits you know about the group. Things like: ma,e or website.
+        /// A dictionary of traits you know about the user. Things like: email, name or friends.
         /// </summary>
         public IDictionary<string, object> Traits { get; set; }
     }
