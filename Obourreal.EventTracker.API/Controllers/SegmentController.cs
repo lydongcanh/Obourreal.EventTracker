@@ -23,7 +23,7 @@ namespace Obourreal.EventTracker.API.Controllers
         public IActionResult Identify(SegmentIdentifyRequest request)
         {
             Analytics.Client.Identify(request.UserId, request.Traits);
-            return Ok();
+            return NoContent();
         }
         
         /// <summary>
@@ -34,7 +34,7 @@ namespace Obourreal.EventTracker.API.Controllers
         public IActionResult Track(SegmentTrackRequest request)
         {
             Analytics.Client.Track(request.UserId, request.Event, request.Properties);
-            return Ok();
+            return NoContent();
         }
         
         /// <summary>
@@ -46,7 +46,7 @@ namespace Obourreal.EventTracker.API.Controllers
         public IActionResult Page(SegmentPageRequest request)
         {
             Analytics.Client.Page(request.UserId, request.Name, request.Category, request.Properties, null);
-            return Ok();
+            return NoContent();
         }
         
         /// <summary>
@@ -58,7 +58,7 @@ namespace Obourreal.EventTracker.API.Controllers
         public IActionResult Screen(SegmentScreenRequest request)
         {
             Analytics.Client.Screen(request.UserId, request.Name, request.Category, request.Properties, null);
-            return Ok();
+            return NoContent();
         }
         
         /// <summary>
@@ -73,7 +73,7 @@ namespace Obourreal.EventTracker.API.Controllers
         public IActionResult Group(SegmentGroupRequest request)
         {
             Analytics.Client.Group(request.UserId, request.GroupId, request.Traits);
-            return Ok();
+            return NoContent();
         }
         
         /// <summary>
@@ -87,7 +87,7 @@ namespace Obourreal.EventTracker.API.Controllers
         public IActionResult Alias(SegmentAliasRequest request)
         {
             Analytics.Client.Alias(request.PreviousId, request.UserId);
-            return Ok();
+            return NoContent();
         }
     }
 }
