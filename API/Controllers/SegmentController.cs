@@ -9,14 +9,15 @@ namespace API.Controllers
     public class SegmentController : ControllerBase
     {
         /// <summary>
-        /// It's recommended that you make an Identify call:
-        /// <list type="bullet">
-        /// <item><description>After a user first registers</description></item>
-        /// <item><description>After a user logs in</description></item>
-        /// <item><description>When a user updates their info (for example, they change or add a new address)</description></item>
-        /// <item><description>Upon loading any pages that are accessible by a logged in user (optional)</description></item>
-        /// </list>
+        /// The Segment Identify call lets you tie a user to their actions and record traits about them.
         /// </summary>
+        /// <remarks>
+        /// It's recommended that you make an Identify call:<br/>
+        /// - After a user first registers<br/>
+        /// - After a user logs in<br/>
+        /// - When a user updates their info (for example, they change or add a new address)<br/>
+        /// - Upon loading any pages that are accessible by a logged in user (optional)
+        /// </remarks>
         [HttpPost]
         [Route("identity")]
         public IActionResult Identify(SegmentIdentifyRequest request)
@@ -61,11 +62,12 @@ namespace API.Controllers
         }
         
         /// <summary>
-        /// This call is how you associate an individual user with a group—
-        /// be it a company, organization, account, project, team or whatever other crazy name you came up with for the same concept!
-        /// A user can be in more than one group; however, not all platforms support multiple groups.
-        /// It also lets you record custom traits about the group, like industry or number of employees.
+        /// This call is how you associate an individual user with a group.
         /// </summary>
+        /// <remarks>
+        /// A user can be in more than one group, however, not all platforms support multiple groups.<br/>
+        /// It also lets you record custom traits about the group, like industry or number of employees.
+        /// </remarks>
         [HttpPost]
         [Route("group")]
         public IActionResult Group(SegmentGroupRequest request)
@@ -76,8 +78,10 @@ namespace API.Controllers
         
         /// <summary>
         /// This call is used to merge two user identities, effectively connecting two sets of user data as one.
-        /// This is an advanced method, but it is required to manage user identities successfully in some of our destinations.
         /// </summary>
+        /// <remarks>
+        /// This is an advanced method, but it is required to manage user identities successfully in some of our destinations.
+        /// </remarks>
         [HttpPost]
         [Route("alias")]
         public IActionResult Alias(SegmentAliasRequest request)
