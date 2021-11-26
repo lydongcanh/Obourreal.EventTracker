@@ -5,7 +5,7 @@ using Segment;
 namespace Obourreal.EventTracker.API.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("v1/[controller]")]
     public class SegmentController : ControllerBase
     {
         /// <summary>
