@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Obourreal.EventTracker.API", "Obourreal.EventTracker.API\Obourreal.EventTracker.API.csproj", "{92AF9395-F6FB-4476-AD83-F2BA894FCC23}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{561A8909-BDE9-4DDD-99F5-9356878A5BC6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,8 @@ Global
 		{92AF9395-F6FB-4476-AD83-F2BA894FCC23}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{92AF9395-F6FB-4476-AD83-F2BA894FCC23}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{92AF9395-F6FB-4476-AD83-F2BA894FCC23}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{92AF9395-F6FB-4476-AD83-F2BA894FCC23} = {561A8909-BDE9-4DDD-99F5-9356878A5BC6}
 	EndGlobalSection
 EndGlobal
